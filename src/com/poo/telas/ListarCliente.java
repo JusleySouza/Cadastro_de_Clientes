@@ -28,7 +28,8 @@ public class ListarCliente extends JFrame {
 		
 		setTitle("Lista de Clientes");
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-		setBounds(150, 150, 710, 503);
+		setBounds(450, 150, 710, 503);
+		this.setLocationRelativeTo(null);;
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);

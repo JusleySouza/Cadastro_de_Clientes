@@ -32,7 +32,8 @@ public class CadastrarCliente extends JFrame {
 	public CadastrarCliente() {
 		setTitle("Cadastrar Cliente");
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-		setBounds(150, 150, 465, 503);
+		setBounds(450, 150, 710, 503);
+		this.setLocationRelativeTo(null);
 		JPanel contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -40,76 +41,76 @@ public class CadastrarCliente extends JFrame {
 		
 		JLabel lblCadastro = new JLabel("Cadastro de Cliente");
 		lblCadastro.setFont(new Font("Tahoma", Font.BOLD, 16));
-		lblCadastro.setBounds(130, 0, 179, 33);
+		lblCadastro.setBounds(246, 0, 179, 33);
 		getContentPane().add(lblCadastro);
 		
 		JLabel lblNome = new JLabel("Nome :");
 		lblNome.setFont(new Font("Tahoma", Font.BOLD, 14));
-		lblNome.setBounds(22, 40, 59, 23);
+		lblNome.setBounds(44, 36, 59, 23);
 		getContentPane().add(lblNome);
 		
 		JLabel lblCpf = new JLabel("Cpf:");
 		lblCpf.setFont(new Font("Tahoma", Font.BOLD, 14));
-		lblCpf.setBounds(22, 92, 46, 23);
+		lblCpf.setBounds(46, 92, 46, 23);
 		getContentPane().add(lblCpf);
 		
 		JLabel lblRg = new JLabel("Rg:");
 		lblRg.setFont(new Font("Tahoma", Font.BOLD, 14));
-		lblRg.setBounds(22, 147, 46, 17);
+		lblRg.setBounds(46, 147, 46, 17);
 		getContentPane().add(lblRg);
 		
 		textNome = new JTextField();
-		textNome.setBounds(22, 61, 403, 20);
+		textNome.setBounds(45, 61, 579, 20);
 		getContentPane().add(textNome);
 		textNome.setColumns(10);
 		
 		textCpf = new JTextField();
-		textCpf.setBounds(22, 116, 403, 20);
+		textCpf.setBounds(45, 116, 579, 20);
 		getContentPane().add(textCpf);
 		textCpf.setColumns(10);
 		
 		textRg = new JTextField();
-		textRg.setBounds(22, 169, 403, 20);
+		textRg.setBounds(45, 169, 579, 20);
 		getContentPane().add(textRg);
 		textRg.setColumns(10);
 		
 		JLabel lblTelefone = new JLabel("Telefone:");
 		lblTelefone.setFont(new Font("Tahoma", Font.BOLD, 14));
-		lblTelefone.setBounds(22, 251, 70, 23);
+		lblTelefone.setBounds(44, 251, 70, 23);
 		getContentPane().add(lblTelefone);
 		
 		textEmail = new JTextField();
-		textEmail.setBounds(22, 220, 403, 20);
+		textEmail.setBounds(44, 220, 580, 20);
 		getContentPane().add(textEmail);
 		textEmail.setColumns(10);
 		
 		JLabel lblEmail = new JLabel("Email:");
 		lblEmail.setFont(new Font("Tahoma", Font.BOLD, 14));
-		lblEmail.setBounds(22, 200, 46, 23);
+		lblEmail.setBounds(46, 200, 46, 23);
 		getContentPane().add(lblEmail);
 		
 		textTelefone = new JTextField();
-		textTelefone.setBounds(22, 272, 403, 20);
+		textTelefone.setBounds(44, 272, 580, 20);
 		getContentPane().add(textTelefone);
 		textTelefone.setColumns(10);
 		
 		JLabel lblEndereco = new JLabel("Endereco:");
 		lblEndereco.setFont(new Font("Tahoma", Font.BOLD, 14));
-		lblEndereco.setBounds(22, 303, 81, 23);
+		lblEndereco.setBounds(44, 303, 81, 23);
 		getContentPane().add(lblEndereco);
 		
 		textEndereco = new JTextField();
-		textEndereco.setBounds(22, 326, 403, 20);
+		textEndereco.setBounds(44, 326, 580, 20);
 		getContentPane().add(textEndereco);
 		textEndereco.setColumns(10);
 		
 		JLabel lblTipo = new JLabel("Tipo:");
 		lblTipo.setFont(new Font("Tahoma", Font.BOLD, 14));
-		lblTipo.setBounds(22, 357, 46, 23);
+		lblTipo.setBounds(46, 358, 46, 23);
 		getContentPane().add(lblTipo);
 		
 		textTipo = new JTextField();
-		textTipo.setBounds(22, 380, 403, 20);
+		textTipo.setBounds(44, 380, 580, 20);
 		getContentPane().add(textTipo);
 		textTipo.setColumns(10);
 		
@@ -150,7 +151,7 @@ public class CadastrarCliente extends JFrame {
 			}
 		});
 		btnCadastrar.setFont(new Font("Tahoma", Font.BOLD, 11));
-		btnCadastrar.setBounds(181, 431, 98, 23);
+		btnCadastrar.setBounds(210, 431, 98, 23);
 		getContentPane().add(btnCadastrar);
 		
 		JButton btnLimpar = new JButton("Limpar");
@@ -169,7 +170,7 @@ public class CadastrarCliente extends JFrame {
 			}
 		});
 		btnLimpar.setFont(new Font("Tahoma", Font.BOLD, 11));
-		btnLimpar.setBounds(336, 431, 89, 23);
+		btnLimpar.setBounds(402, 431, 89, 23);
 		getContentPane().add(btnLimpar);
 	}
 

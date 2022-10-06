@@ -43,19 +43,20 @@ public class Principal extends JFrame {
 		
 		setTitle("Tela Principal");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(150, 150, 465, 503);
+		setBounds(450, 150, 710, 503);
+		this.setLocationRelativeTo(null);
 		JPanel contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		getContentPane().setLayout(null);
 		
 		JLabel lblCadastro = new JLabel("Cadastro.com");
-		lblCadastro.setFont(new Font("Tahoma", Font.BOLD, 40));
-		lblCadastro.setBounds(67, 137, 308, 144);
+		lblCadastro.setFont(new Font("Tahoma", Font.BOLD, 45));
+		lblCadastro.setBounds(184, 131, 323, 144);
 		getContentPane().add(lblCadastro);
 		
 		JMenuBar menuBar = new JMenuBar();
-		menuBar.setBounds(0, 0, 449, 22);
+		menuBar.setBounds(0, 0, 694, 22);
 		contentPane.add(menuBar);
 		
 		JMenu mnCliente = new JMenu("Cliente");

@@ -32,7 +32,8 @@ public class EditarExcluirCliente extends JFrame {
 	public EditarExcluirCliente() {
 		setTitle("Alterar/Excluir Cliente");
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-		setBounds(150, 150, 465, 503);
+		setBounds(450, 150, 710, 503);
+		this.setLocationRelativeTo(null);
 		JPanel contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -45,71 +46,71 @@ public class EditarExcluirCliente extends JFrame {
 		
 		JLabel lblNome = new JLabel("Nome :");
 		lblNome.setFont(new Font("Tahoma", Font.BOLD, 14));
-		lblNome.setBounds(22, 89, 59, 23);
+		lblNome.setBounds(47, 92, 59, 23);
 		getContentPane().add(lblNome);
 		
 		JLabel lblCpf = new JLabel("Cpf:");
 		lblCpf.setFont(new Font("Tahoma", Font.BOLD, 14));
-		lblCpf.setBounds(22, 43, 46, 23);
+		lblCpf.setBounds(47, 41, 46, 23);
 		getContentPane().add(lblCpf);
 		
 		JLabel lblRg = new JLabel("Rg:");
 		lblRg.setFont(new Font("Tahoma", Font.BOLD, 14));
-		lblRg.setBounds(22, 147, 46, 17);
+		lblRg.setBounds(47, 147, 46, 17);
 		getContentPane().add(lblRg);
 		
 		textNovoNome = new JTextField();
-		textNovoNome.setBounds(22, 116, 403, 20);
+		textNovoNome.setBounds(47, 116, 604, 20);
 		getContentPane().add(textNovoNome);
 		textNovoNome.setColumns(10);
 		
 		textCpf = new JTextField();
-		textCpf.setBounds(73, 44, 249, 20);
+		textCpf.setBounds(103, 44, 432, 20);
 		getContentPane().add(textCpf);
 		textCpf.setColumns(10);
 		
 		textNovoRg = new JTextField();
-		textNovoRg.setBounds(22, 169, 403, 20);
+		textNovoRg.setBounds(47, 169, 604, 20);
 		getContentPane().add(textNovoRg);
 		textNovoRg.setColumns(10);
 		
 		JLabel lblTelefone = new JLabel("Telefone:");
 		lblTelefone.setFont(new Font("Tahoma", Font.BOLD, 14));
-		lblTelefone.setBounds(22, 251, 70, 23);
+		lblTelefone.setBounds(47, 251, 70, 23);
 		getContentPane().add(lblTelefone);
 		
 		textNovoEmail = new JTextField();
-		textNovoEmail.setBounds(22, 220, 403, 20);
+		textNovoEmail.setBounds(47, 220, 604, 20);
 		getContentPane().add(textNovoEmail);
 		textNovoEmail.setColumns(10);
 		
 		JLabel lblEmail = new JLabel("Email:");
 		lblEmail.setFont(new Font("Tahoma", Font.BOLD, 14));
-		lblEmail.setBounds(22, 200, 46, 23);
+		lblEmail.setBounds(47, 198, 46, 23);
 		getContentPane().add(lblEmail);
 		
 		textNovoTelefone = new JTextField();
-		textNovoTelefone.setBounds(22, 272, 403, 20);
+		textNovoTelefone.setBounds(47, 272, 604, 20);
 		getContentPane().add(textNovoTelefone);
 		textNovoTelefone.setColumns(10);
 		
 		JLabel lblEndereco = new JLabel("Endereco:");
 		lblEndereco.setFont(new Font("Tahoma", Font.BOLD, 14));
-		lblEndereco.setBounds(22, 303, 81, 23);
+		lblEndereco.setBounds(47, 303, 81, 23);
 		getContentPane().add(lblEndereco);
 		
 		textNovoEndereco = new JTextField();
-		textNovoEndereco.setBounds(22, 326, 403, 20);
+		textNovoEndereco.setBounds(47, 325, 604, 20);
 		getContentPane().add(textNovoEndereco);
 		textNovoEndereco.setColumns(10);
 		
 		JLabel lblTipo = new JLabel("Tipo:");
 		lblTipo.setFont(new Font("Tahoma", Font.BOLD, 14));
-		lblTipo.setBounds(22, 357, 46, 23);
+		lblTipo.setBounds(47, 356, 46, 23);
 		getContentPane().add(lblTipo);
 		
 		textNovoTipo = new JTextField();
-		textNovoTipo.setBounds(22, 380, 403, 20);
+		textNovoTipo.setBounds(47, 380, 604, 20);
 		getContentPane().add(textNovoTipo);
 		textNovoTipo.setColumns(10);
 		
@@ -130,7 +131,7 @@ public class EditarExcluirCliente extends JFrame {
 			}
 		});
 		btnAlterar.setFont(new Font("Tahoma", Font.BOLD, 11));
-		btnAlterar.setBounds(22, 431, 98, 23);
+		btnAlterar.setBounds(82, 431, 98, 23);
 		getContentPane().add(btnAlterar);
 		
 		JButton btnLimpar = new JButton("Limpar");
@@ -140,7 +141,7 @@ public class EditarExcluirCliente extends JFrame {
 			}
 		});
 		btnLimpar.setFont(new Font("Tahoma", Font.BOLD, 11));
-		btnLimpar.setBounds(182, 431, 89, 23);
+		btnLimpar.setBounds(318, 431, 89, 23);
 		getContentPane().add(btnLimpar);
 		
 		JButton btnProcurar = new JButton("Procurar");
@@ -161,7 +162,7 @@ public class EditarExcluirCliente extends JFrame {
 			}
 		});
 		btnProcurar.setFont(new Font("Tahoma", Font.BOLD, 11));
-		btnProcurar.setBounds(332, 45, 93, 23);
+		btnProcurar.setBounds(558, 43, 93, 23);
 		contentPane.add(btnProcurar);
 		
 		JButton btnExcluir = new JButton("Excluir");
@@ -177,7 +178,7 @@ public class EditarExcluirCliente extends JFrame {
 			}
 		});
 		btnExcluir.setFont(new Font("Tahoma", Font.BOLD, 11));
-		btnExcluir.setBounds(336, 431, 89, 23);
+		btnExcluir.setBounds(527, 431, 89, 23);
 		contentPane.add(btnExcluir);
 	}
 

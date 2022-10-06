@@ -23,7 +23,8 @@ public class ConfirmacaoExcluirCliente extends JFrame {
 		setTitle("Cliente");
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(150, 150, 322, 229);
+		setBounds(450, 150, 322, 229);
+		this.setLocationRelativeTo(null);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
